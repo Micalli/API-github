@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Readex Pro', sans-serif;
+  background-image: linear-gradient(to  bottom right, #434343 0%, black 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 500px;
+  min-width: 300px;
+  margin: 30px auto;
+  overflow: auto;
+  border-radius: 15px;
+  border: solid 2px rgb(25, 255, 167);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container > h1{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color:#fff;
+  margin: 10px;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 15px;
+  padding: 10px;
+  background-color: #19a383;
+  border-radius: 50px;
+  transition: .3s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:hover{
+  font-weight:700;
+  background-color: #1ecea5;
+}
+
+li > div > img{
+  margin-left: 5px;
+}
+
+.star-off{
+  opacity: 0.5;
+ 
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #048365;
+}
+
+.logo{
+  
+  width: 150px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
 }
